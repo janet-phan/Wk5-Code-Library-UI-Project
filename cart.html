@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+
+    <nav>
+            <ul>
+                <li><a href="index.html"><img src="images/community_library_logo-01.png"></a></li>
+                <li><a href="donate.html"><button>Donate</button></a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="card.html">Get a Library Card</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <div class="bluebar">
+            <p id="checkoutnav"><img src="images/menu_icon.png"> &nbsp; Check out list</p>
+        </div>
+
+        <div class="cosearchwrap">
+            <div>
+            <form action="" class="checkoutsearch" >                
+                <input type="text" placeholder="Search" name="checkoutsearch">
+                <button type="submit" id="magglass"><img src="images/magglass.png"></button>
+
+            </form>
+
+            </div>
+            <div>
+            <button id="filter">Filter</button>
+            </div>
+        </div>
+
+    <div class="cotable">
+        <table>
+            <tr id="cotoprow">
+                <td id="cofirstcol"><img src="images/bluecircle.png"> &nbsp;&nbsp;&nbsp;<img src="images/darrow.png"> </td>
+                <th id="secondcol">Name</th>
+                <th>Barcode</th>
+                <th>Return Date</th>
+                <th>Pick Up Date</th>
+                <th>Actual Return Date</th>
+                <th>Overdue Fee</th>
+            </tr>
+            <tr>
+                <td id="cofirstcol">1 &nbsp;&nbsp;&nbsp;<img src="images/bluehollowstar.png"></td>
+                <td>Book 1</td>
+                <td>234516162545267182182112</td>
+                <td>01/02/2023</td>
+                <td>01/02/2023</td>
+                <td>Pending</td>
+                <td>$0</td>
+            </tr>
+            <tr>
+                <td id="cofirstcol">2 &nbsp;&nbsp;&nbsp;<img src="images/bluehollowstar.png"></td>
+                <td>Book 2</td>
+                <td>234516162545267182182112</td>
+                <td>10/14/2022</td>
+                <td>10/04/2022</td>
+                <td id="late">01/04/2023</td>
+                <td id="late">$5.50</td>
+            <tr>
+                <td id="cofirstcol">3 &nbsp;&nbsp;&nbsp;<img src="images/bluehollowstar.png"></td>
+                <td>Book 3</td>
+                <td>234516162545267182182112</td>
+                <td>08/19/2022</td>
+                <td>08/09/2022</td>
+                <td>09/09/2022</td>
+                <td id="late">$2.00</td>
+            </tr>
+            <tr>
+                <td id="cofirstcol">4 &nbsp;&nbsp;&nbsp;<img src="images/bluehollowstar.png"></td>
+                <td>Book 4</td>
+                <td>234516162545267182182112</td>
+                <td>05/22/2023</td>
+                <td>05/12/2023</td>
+                <td>05/22/2023</td>
+                <td>$0.00</td>
+            </tr>
+            <tr>
+                <td id="cofirstcol">5 &nbsp;&nbsp;&nbsp;<img src="images/bluehollowstar.png"></td>
+                <td>Book 5</td>
+                <td>234516162545267182182112</td>
+                <td>04/22/2023</td>
+                <td>03/22/2023</td>
+                <td id="late">05/22/2023</td>
+                <td id="late">$1.00</td>
+            </tr>
+        </table>
+    </div>
+
+    </main>
+
+  </body>
+</html>
