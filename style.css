@@ -6,6 +6,11 @@ body {
     background-color: white;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 hr {
     border-top: 2px solid #22235F;
 }
@@ -21,6 +26,7 @@ nav ul {
     margin: 0;
     padding: 0;
     padding-right: 2em;
+    flex-wrap: wrap;
 }
 
 nav ul li:not(:first-child) {
@@ -30,6 +36,7 @@ nav ul li:not(:first-child) {
 nav ul li {
     display: inline-block;
     list-style-type: none;
+    flex: auto;
 }
 
 nav ul li a {
@@ -76,11 +83,12 @@ nav button:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 100%;
 }
 
 .searchbar {
-    width: 100%;
-    max-width: 752px;
+    max-width: 100%;
+    width: 752px;
     max-height: 79;
     background: white;
     display: flex;
@@ -122,24 +130,29 @@ nav button:hover {
     text-align: right;
 }
 
-.popularbooks table {
+.popularbooks {
     width: 1390px;
-    height: 82px;
-    max-width: 95%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popularbooks table {
+    max-width: 100%;
     padding-top: 1rem;
     background-color: white;
 }
 .popularbooks table td {
-    width: 25%;
     color: #22235f;
     padding: 0 10px;
 }
 
 .popularbooks table td img {
-    height: 325px;
+    max-width: 100%;
     display: block;
-
     padding-top: 2rem;
+    object-fit: contain;
+
 }
 
 /* Login */
@@ -300,74 +313,142 @@ nav button:hover {
 
 /* JUST ANOTHER LOVE SONG */
 
+.fullpagebook {
+    width: 862px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .booktitle {
-    margin-left:auto;
-    margin-right:auto;
-    width: 1000px;
+    max-width: 100%;
+    width: 862px;
     color: #22235F;
+
+}
+
+.booktitle h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.booktitle h3 {
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .bookpage {
-    display: flex;
-    width: 1000px;
-    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     color: #22235F;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 .bookcover {
     float: left;
+    text-align: left;
+    width: 20rem;
+    margin-right: 3rem;
 }
 
-.bookcover img{
-    height: 600px;
+.bookcover img {
+    width: 245px;
+    height: auto;
+    text-align: left;  
 }
 
 .cartoptions {
-    float: right;
-    margin-left: 150px;
+    max-width: 100%;
+    align-items: left;
+    display: block;
+    margin-left: auto;
 }
 
-.bookpage button {
-    padding: 6px;
-    margin-right: 1rem;
-    width: 200px;
-    height: 75px;
+.book_cartopt {
+    margin-left: auto;
+    display: flex;
+    vertical-align: middle;
+    align-items:center;
+    text-align: center;
+}
+
+.cartoptions button {
+    margin-right: 15px;
+    width: 184px;
+    min-width: 200px;
+    height: 61px;
+    padding-left: 11px;
+    padding-top: 18px;
+    padding-bottom: 20px;
     font-family: 'Inter', sans-serif;
-    font-size: larger;
+    font-size: 20px;
     background-color: #22235f;
     border: none;
     border-radius: 8px;
     color: white;
     vertical-align: middle;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cartoptions button img {
+    display: inline-block;
+    align-items:center;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+
 }
 
 .bookpage button img {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+}
+
+.bookoptcont {
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .bookopt {
     display: inline-block;
     border: 2px solid #22235F;
     border-radius: 8px;
-    width: 120px;
-    height: 80px;
-    text-align: center;
+    height: 93px;
     vertical-align: middle;
-    padding: 10px;
+    font-size: 12px;
+    line-height: 14.52px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 2px;
+    margin: 5px;
+
+}
+
+.availform p {
+    line-height: 18.15px;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+.bookinfo {
+    font-size: 12px;
+    font-weight: 400px;
 }
 
 .booksummary {
-    width: 1000px;
+    width: 100%;
+    max-width: 100%;
     color: #22235F;
     margin-left:auto;
     margin-right:auto; 
 }
 
 .rating {
-    width: 1000px;
+    width: 862px;
+    max-width: 100%;
     padding: 0rem 2rem;
     margin-left:auto;
     margin-right:auto;
@@ -381,11 +462,11 @@ nav button:hover {
 .rating img {
     height: 35px;
     width: 35px;
+    display: inline-block;
 }
 
 .rating button {
     float: right; 
-    display: inline; 
     background-color: white;
     color: #22235F;
     border-radius: 6px;
@@ -394,7 +475,8 @@ nav button:hover {
 }
 
 .reviews {
-    width: 1000px;
+    width: 862px;
+    max-width: 100%;
     padding: 2rem 2rem;
     color: #22235F;
     margin-left:auto;
@@ -405,10 +487,13 @@ nav button:hover {
 .reviews img {
     height: 25px;
     width: 25px;
+    display: inline-block;
+
 }
 
 .tagsection {
-    width: 1000px;
+    width: 862px;
+    max-width: 100%;
     margin-left:auto;
     margin-right:auto;
 }
@@ -417,30 +502,32 @@ nav button:hover {
     font-size: large;
     color: #22235F;
     font-weight: 700;
+    width: 862px;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .tags {
-    width: 1000px;
-    margin-left:auto;
-    margin-right:auto;
+    padding-bottom: 2rem;
     color: #22235F;
     justify-self: center;
     align-content: center;
     align-items: center;
     display: flex;
+    text-align: center;
 }
 
 .tags p {
     border: 2px solid #22235F;
     border-radius: 8px;
     padding: 3px 5px;
-    display: inline-block;
-    margin-left:auto;
+    font-size: 12px;
+    display: inline-flex;
     margin-right:auto;
 }
 
 .bookrectitles {
-    width: 1000px;
+    max-width: 100%;
     margin-left:auto;
     margin-right:auto;
     color: #22235F;
@@ -458,7 +545,8 @@ nav button:hover {
 
 .bookrectitles img {
     display: block;
-    max-width: 500px;
+    width: 152px;
+    max-width: 100%;
     height: auto;
     margin: auto;
 }
@@ -480,14 +568,14 @@ nav button:hover {
 }
 
 .catalogsearch {
-    width: 100%;
-    max-width: 825px;
+    width: 1038px;
+    height: 79px;
+    max-width: 100%;
     border: 2px solid #22235F;
     background: #F5F5F5;
     display: flex;
     align-items: center;
     border-radius: 8px;
-    padding: 10px 20px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -515,30 +603,33 @@ nav button:hover {
 }
 
 .advancedsearch {
-    width: 750px;
+    width: 1038px;
+    max-width: 100%;
     text-align: right;
     margin-left: auto;
     margin-right: auto;
-    vertical-align: middle;
+    display: flex;
 }
 
 .advancedsearch a {
     color: #22235F;
-
+    font-size: 20px;
 }
 
 .advancedsearch img {
-    width: 25px;
     vertical-align: middle;
+    text-align: right;
+    margin-left: auto;
 }
 
 .catalognav {
     display: flex;
-    width: 1000px;
+    width: 1038px;
+    max-width: 100%;
     margin-left:auto;
     margin-right:auto;
     justify-content: center;
-
+    font-size: 20px;
 }
 
 .catalognav p {
@@ -557,14 +648,14 @@ nav button:hover {
     background-color: #ff6471;
 }
 
-.catalogsort {
+.catresults form {
     width: 100%;
     max-width: 850px;
     margin-left: auto;
     margin-right: auto;
 }
 
-form.catalogsort select {
+.catresults select {
     margin-top: 2rem;
     width: 350px;
     height: 50px;
@@ -573,6 +664,13 @@ form.catalogsort select {
     color: gray;
     border-radius: 8px;
     padding: 10px 20px;
+}
+
+.catalogsort form {
+    width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* .result {
@@ -605,21 +703,34 @@ form.catalogsort select {
 }
 
 */
-
+.catlisting {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
 .catresults {
     padding-top: 2rem;
     color: #22235F;
     font-family: 'Inter', sans-serif;
-    width: 65%;
+    width: 52.7%;
     max-width: 1000px;
     border-bottom: 2px solid #22235F;
-    margin-right: auto;
-    margin-left: auto;
+    display: block;
     float: left;
 }
 
 table.catresults {
     margin-left: 4rem;
+}
+
+.catresultbook {
+    width: 300px;
+    margin-right: 114px;
+}
+.catresultbook img {
+    margin-right: 114px;
+    width: 152px;
 }
 
 .booktitlelink {
@@ -651,9 +762,12 @@ p.cattag {
     color: #22235F;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
-    width: 25%;
+    width: 23%;
     max-width: 400px;
     padding-right: 2rem;
+    margin-top: 2rem;
+    overflow: hidden;
+
 }
 
 /* .catfilter button {
@@ -710,7 +824,7 @@ p.cattag {
 }
 
 .tagsearch {
-    width: 300px;
+    width: 90%;
     max-width: 325px;
     height: 30px;
     border: 1px solid #22235F;

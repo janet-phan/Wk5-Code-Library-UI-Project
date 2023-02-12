@@ -19,7 +19,7 @@
             <li><a href="#">Get a Library Card</a></li>
             <li><a href="#">Locations</a></li>
             <li><a href="login.html">Log In</a></li>
-        </ul>
+          </ul>
     </nav>
 
     <main>
@@ -30,7 +30,7 @@
                 <button type="submit"><img src="images/magglass.png"></button>
             </form>
            
-            <p class="advancedsearch"><img src="images/cogwheel.png"> <a href="#" style="margin-left: auto; ">Advanced search</a></p>
+            <p class="advancedsearch"><img src="images/cogwheel.png" style="width: 31px;"> <a href="#">Advanced search</a></p>
 
             <div class="catalognav">
                 <a href="#"><p>All Results (975,951)</p></a>
@@ -38,14 +38,7 @@
                 <a href="#"><p>Our Site (14,479)</p></a>
                 <a href="#"><p>Events & Classes (4,807)</p></a>
             </div>
-            <form action="" class="catalogsort">
-                <select id="catalogsort" name="catalogsort">
-                    <option value="popular">Sorted by - Most popular</option>
-                    <option value="a-z">Sorted by - A - Z</option>
-                    <option value="z-a">Sorted by - Z - A</option>
-                    <option value="newest">Sorted by - Newest first</option>
-                  </select>
-            </form>
+
 
             <!-- <div class="searchresults">
                 <div class="result" id="returnbook">
@@ -78,153 +71,170 @@
                 </div>
 
             </div> -->
+            <div class="catlisting">
+                <div class="catfilters">
+                    <div id="cfoptions">
+                        <h3>Catalog Filters</h3>
 
-            <div class="catfilters">
-                <div id="cfoptions">
-                    <h3>Catalog Filters</h3>
+                            <label><input type="checkbox" value="1" checked><span>Available<br>Now</span></label>
+                            <label><input type="checkbox" value="2"><span>Online<br>Only</span></label>
+                            <label><input type="checkbox" value="3"><span>On<br>Order</span></label>
+                            <br> <br>
 
-                        <label><input type="checkbox" value="1" checked><span>Available<br>Now</span></label>
-                        <label><input type="checkbox" value="2"><span>Online<br>Only</span></label>
-                        <label><input type="checkbox" value="3"><span>On<br>Order</span></label>
+                
+                        <h3>Age</h3>
+                        <label><input type="checkbox" value="1" checked><span>Kids</span></label>
+                        <label><input type="checkbox" value="2"><span>Teens</span></label>
+                        <label><input type="checkbox" value="3"><span>Adults</span></label>
                         <br> <br>
 
-               
-                    <h3>Age</h3>
-                    <label><input type="checkbox" value="1" checked><span>Kids</span></label>
-                    <label><input type="checkbox" value="2"><span>Teens</span></label>
-                    <label><input type="checkbox" value="3"><span>Adults</span></label>
-                     <br> <br>
-
-                    <h3>Format</h3>
-                    <label><input type="checkbox" value="1" checked><span>Book</span></label>
-                    <label><input type="checkbox" value="2"><span>eBook</span></label>
-                    <label><input type="checkbox" value="3"><span>eAudiobook</span></label>
-                    <label><input type="checkbox" value="4"><span>Online Journal</span></label>
-                    <label><input type="checkbox" value="5"><span>DVD</span></label>
-                    <label><input type="checkbox" value="6"><span>Photograph</span></label>
-                    <br><br>
-                    <b>Show more formats </b><img src="images/darrow.png" style="width: 15px; vertical-align: center;">
-                    <br>
-                    <br>
-                    <h3>Tags</h3>
-                    <form action="" class="tagsearch">
-                        <input type="text" placeholder="Browse related tags..." name="tagsearch">
-                        <button type="submit"><img src="images/magglass.png"></button>
-                    </form>
+                        <h3>Format</h3>
+                        <label><input type="checkbox" value="1" checked><span>Book</span></label>
+                        <label><input type="checkbox" value="2"><span>eBook</span></label>
+                        <label><input type="checkbox" value="3"><span>eAudiobook</span></label>
+                        <label><input type="checkbox" value="4"><span>Online Journal</span></label>
+                        <label><input type="checkbox" value="5"><span>DVD</span></label>
+                        <label><input type="checkbox" value="6"><span>Photograph</span></label>
+                        <br><br>
+                        <b>Show more formats </b><img src="images/darrow.png" style="width: 15px; vertical-align: center; display: inline;">
                         <br>
-                    <form action="" class="language">
-                          <input type="radio" id="english" name="fav_language" value="english">
-                          <label for="english">English</label><br>
-                          <input type="radio" id="chinese" name="fav_language" value="chinese">
-                          <label for="chinese">中文 | Chinese</label><br>
-                          <input type="radio" id="russian" name="fav_language" value="russian">
-                          <label for="russian">русский | Russian</label><br>
-                          <input type="radio" id="spanish" name="fav_language" value="spanish">
-                          <label for="spanish">Español | Spanish</label><br>
-                          <input type="radio" id="polish" name="fav_language" value="polish">
-                          <label for="polish">Polskie | Polish</label><br>
-                          <input type="radio" id="french" name="fav_language" value="french">
-                          <label for="french">français | French</label><br>
-                          <input type="radio" id="hebrew" name="fav_language" value="hebrew">
-                          <label for="hebrew">עִברִית | Hebrew</label>
-                    </form>
-                    <br>
-                    <b>Show more languages </b> <img src="images/darrow.png" style="width: 15px; vertical-align: center;">
-                    <br><br><br>
+                        <br>
+                        <h3>Tags</h3>
+                        <form action="" class="tagsearch">
+                            <input type="text" placeholder="Browse related tags..." name="tagsearch">
+                            <button type="submit"><img src="images/magglass.png"></button>
+                        </form>
+                            <br>
+                        <form action="" class="language">
+                              <input type="radio" id="english" name="fav_language" value="english">
+                              <label for="english">English</label><br>
+                              <input type="radio" id="chinese" name="fav_language" value="chinese">
+                              <label for="chinese">中文 | Chinese</label><br>
+                              <input type="radio" id="russian" name="fav_language" value="russian">
+                              <label for="russian">русский | Russian</label><br>
+                              <input type="radio" id="spanish" name="fav_language" value="spanish">
+                              <label for="spanish">Español | Spanish</label><br>
+                              <input type="radio" id="polish" name="fav_language" value="polish">
+                              <label for="polish">Polskie | Polish</label><br>
+                              <input type="radio" id="french" name="fav_language" value="french">
+                              <label for="french">français | French</label><br>
+                              <input type="radio" id="hebrew" name="fav_language" value="hebrew">
+                              <label for="hebrew">עִברִית | Hebrew</label>
+                        </form>
+                        <br>
+                        <b>Show more languages </b> <img src="images/darrow.png" style="width: 15px; vertical-align: center; display: inline;">
+                        <br><br><br>
+                    </div>
                 </div>
+
+                <table class="catresults">
+                    <tr>
+                        <form action="" class="catalogsort">
+                            <select id="catalogsort" name="catalogsort">
+                                <option value="popular">Sorted by - Most popular</option>
+                                <option value="a-z">Sorted by - A - Z</option>
+                                <option value="z-a">Sorted by - Z - A</option>
+                                <option value="newest">Sorted by - Newest first</option>
+                              </select>
+                    </tr>
+                    <tr>
+                        <td><img class="catresultbook" src="images/books/wimpykid_dogdays.png"></td>
+                        <td><form action="" class="catalogsort">
+                            <select id="catalogsort" name="catalogsort">
+                                <option value="popular">Sorted by - Most popular</option>
+                                <option value="a-z">Sorted by - A - Z</option>
+                                <option value="z-a">Sorted by - Z - A</option>
+                                <option value="newest">Sorted by - Newest first</option>
+                              </select>
+                        </form>
+                        <h3>Search: Catalog</h3>
+                            <a href="#" id="returnbook" class="booktitlelink">Diary of a wimpy kid: dog days</a>
+                            <br>
+                            <p><b style="color: green;"> Available Now</b></color> at <b>Bay Ridge Community Library</b> and <b><u>7 others</u></b> <img src="images/darrow.png" style="width: 20px; vertical-align: center; display: inline;">
+                            <br>
+                            <br>
+                            <font size="2"><b>Author:</b> Jeff Kinney <b>Call Number:</b> J FIC KINNEY <b>Published:</b> 2009
+                            <br><br>
+                            In the latest diary of middle-schooler Greg Heffley, he records his attempts to spend his summer vacation sensibly indoors playing video games and watching television, despite his mother's other ideas.
+                            </p>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr style="height: 140px; padding-bottom: 30px; vertical-align: top;">
+                        <td></td>
+                        <td>
+                            <p class="cattag">Chapter books</p>
+                            <p class="cattag">Children's stories</p>
+                            <p class="cattag">Diaries</p>
+                            <p class="cattag">Diary fiction</p>
+                            <p class="cattag">Domestic fiction</p>
+                            <p class="cattag">Friendship</p>
+                            <p class="cattag">Humorous fiction</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="catresults">
+                    <tr>
+                        <td><img  class="catresultbook" src="images/books/wimpykid_rodrickrules.png"></td>
+                        <td><h3>Search: Catalog</h3>
+                            <a href="#" id="returnbook" class="booktitlelink">Diary of a wimpy kid: dog days</a>
+                            <br>
+                            <p><b style="color: green;"> Available Now</b></color> at <b>Bay Ridge Community Library</b> and <b><u>7 others</u></b> <img src="images/darrow.png" style="width: 20px; vertical-align: center; display: inline;">
+                            <br>
+                            <br>
+                            <font size="2"><b>Author:</b> Jeff Kinney <b>Call Number:</b> J FIC KINNEY <b>Published:</b> 2009
+                            <br><br>
+                            In the latest diary of middle-schooler Greg Heffley, he records his attempts to spend his summer vacation sensibly indoors playing video games and watching television, despite his mother's other ideas.
+                            </p>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr style="height: 140px; padding-bottom: 30px; vertical-align: top;">
+                        <td></td>
+                        <td>
+                            <p class="cattag">Chapter books</p>
+                            <p class="cattag">Children's stories</p>
+                            <p class="cattag">Diaries</p>
+                            <p class="cattag">Diary fiction</p>
+                            <p class="cattag">Domestic fiction</p>
+                            <p class="cattag">Friendship</p>
+                            <p class="cattag">Humorous fiction</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table class="catresults">
+                    <tr>
+                        <td><img  class="catresultbook" src="images/books/wimpykid_thelaststraw.png"></td>
+                        <td><h3>Search: Catalog</h3>
+                            <a href="#" id="returnbook" class="booktitlelink">Diary of a wimpy kid: dog days</a>
+                            <br>
+                            <p><b style="color: green;"> Available Now</b></color> at <b>Bay Ridge Community Library</b> and <b><u>7 others</u></b> <img src="images/darrow.png" style="width: 20px; vertical-align: center; display: inline;">
+                            <br>
+                            <br>
+                            <font size="2"><b>Author:</b> Jeff Kinney <b>Call Number:</b> J FIC KINNEY <b>Published:</b> 2009
+                            <br><br>
+                            In the latest diary of middle-schooler Greg Heffley, he records his attempts to spend his summer vacation sensibly indoors playing video games and watching television, despite his mother's other ideas.
+                            </p>
+                            </font>
+                        </td>
+                    </tr>
+                    <tr style="height: 140px; padding-bottom: 30px; vertical-align: top;">
+                        <td></td>
+                        <td>
+                            <p class="cattag">Chapter books</p>
+                            <p class="cattag">Children's stories</p>
+                            <p class="cattag">Diaries</p>
+                            <p class="cattag">Diary fiction</p>
+                            <p class="cattag">Domestic fiction</p>
+                            <p class="cattag">Friendship</p>
+                            <p class="cattag">Humorous fiction</p>
+                        </td>
+                    </tr>
+                </table>
+
             </div>
-
-            <table class="catresults">
-                <tr>
-                    <td><img src="images/books/wimpykid_dogdays.png"></td>
-                    <td><h3>Search: Catalog</h3>
-                        <a href="#" id="returnbook" class="booktitlelink">Diary of a wimpy kid: dog days</a>
-                        <br>
-                        <p><b style="color: green;"> Available Now</b></color> at <b>Bay Ridge Community Library</b> and <b><u>7 others</u></b> <img src="images/darrow.png" style="width: 20px; vertical-align: center;">
-                        <br>
-                        <br>
-                        <font size="2"><b>Author:</b> Jeff Kinney <b>Call Number:</b> J FIC KINNEY <b>Published:</b> 2009
-                        <br><br>
-                        In the latest diary of middle-schooler Greg Heffley, he records his attempts to spend his summer vacation sensibly indoors playing video games and watching television, despite his mother's other ideas.
-                        </p>
-                        </font>
-                    </td>
-                </tr>
-                <tr style="height: 140px; padding-bottom: 30px; vertical-align: top;">
-                    <td></td>
-                    <td>
-                        <p class="cattag">Chapter books</p>
-                        <p class="cattag">Children's stories</p>
-                        <p class="cattag">Diaries</p>
-                        <p class="cattag">Diary fiction</p>
-                        <p class="cattag">Domestic fiction</p>
-                        <p class="cattag">Friendship</p>
-                        <p class="cattag">Humorous fiction</p>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="catresults">
-                <tr>
-                    <td><img src="images/books/wimpykid_rodrickrules.png"></td>
-                    <td><h3>Search: Catalog</h3>
-                        <a href="#" id="returnbook" class="booktitlelink">Diary of a wimpy kid: dog days</a>
-                        <br>
-                        <p><b style="color: green;"> Available Now</b></color> at <b>Bay Ridge Community Library</b> and <b><u>7 others</u></b> <img src="images/darrow.png" style="width: 20px; vertical-align: center;">
-                        <br>
-                        <br>
-                        <font size="2"><b>Author:</b> Jeff Kinney <b>Call Number:</b> J FIC KINNEY <b>Published:</b> 2009
-                        <br><br>
-                        In the latest diary of middle-schooler Greg Heffley, he records his attempts to spend his summer vacation sensibly indoors playing video games and watching television, despite his mother's other ideas.
-                        </p>
-                        </font>
-                    </td>
-                </tr>
-                <tr style="height: 140px; padding-bottom: 30px; vertical-align: top;">
-                    <td></td>
-                    <td>
-                        <p class="cattag">Chapter books</p>
-                        <p class="cattag">Children's stories</p>
-                        <p class="cattag">Diaries</p>
-                        <p class="cattag">Diary fiction</p>
-                        <p class="cattag">Domestic fiction</p>
-                        <p class="cattag">Friendship</p>
-                        <p class="cattag">Humorous fiction</p>
-                    </td>
-                </tr>
-            </table>
-
-            <table class="catresults">
-                <tr>
-                    <td><img src="images/books/wimpykid_thelaststraw.png"></td>
-                    <td><h3>Search: Catalog</h3>
-                        <a href="#" id="returnbook" class="booktitlelink">Diary of a wimpy kid: dog days</a>
-                        <br>
-                        <p><b style="color: green;"> Available Now</b></color> at <b>Bay Ridge Community Library</b> and <b><u>7 others</u></b> <img src="images/darrow.png" style="width: 20px; vertical-align: center;">
-                        <br>
-                        <br>
-                        <font size="2"><b>Author:</b> Jeff Kinney <b>Call Number:</b> J FIC KINNEY <b>Published:</b> 2009
-                        <br><br>
-                        In the latest diary of middle-schooler Greg Heffley, he records his attempts to spend his summer vacation sensibly indoors playing video games and watching television, despite his mother's other ideas.
-                        </p>
-                        </font>
-                    </td>
-                </tr>
-                <tr style="height: 140px; padding-bottom: 30px; vertical-align: top;">
-                    <td></td>
-                    <td>
-                        <p class="cattag">Chapter books</p>
-                        <p class="cattag">Children's stories</p>
-                        <p class="cattag">Diaries</p>
-                        <p class="cattag">Diary fiction</p>
-                        <p class="cattag">Domestic fiction</p>
-                        <p class="cattag">Friendship</p>
-                        <p class="cattag">Humorous fiction</p>
-                    </td>
-                </tr>
-            </table>
-
-
 
         </div>
 
